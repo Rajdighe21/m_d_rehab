@@ -1,0 +1,100 @@
+.smk_accordion{
+	position: relative;
+	border-bottom: 1px solid rgba(255,255,255,0.2)
+	
+}
+.smk_accordion .accordion_in{ 
+	position: relative;
+	z-index: 10;
+	border-top: 1px solid #c6c7dd;
+}
+
+/* Head */
+.smk_accordion .accordion_in .acc_head{
+    position: relative;
+/*    background: #33bebc;*/
+    padding: 10px 10px 10px 40px;
+    display: block;
+    cursor: pointer;
+    font-family: 'Barlow-Regular';
+    font-size: 20px;
+    line-height: 1.5;
+    color: #42448e;
+}
+.smk_accordion .accordion_in:first-of-type,
+.smk_accordion .accordion_in:first-of-type .acc_head{
+	
+}
+.smk_accordion .accordion_in:last-of-type,
+.smk_accordion .accordion_in:last-of-type .acc_content{
+	border-radius: 0 0 3px 3px;
+}
+
+/* Content */
+.smk_accordion .accordion_in .acc_content p {
+	font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: justify;
+	color: #42448e;
+}
+.smk_accordion .accordion_in .acc_content p + p{margin-top: 0}
+
+.smk_accordion .accordion_in h1:first-of-type,
+.smk_accordion .accordion_in h2:first-of-type,
+.smk_accordion .accordion_in h3:first-of-type,
+.smk_accordion .accordion_in h4:first-of-type,
+.smk_accordion .accordion_in h5:first-of-type,
+.smk_accordion .accordion_in h6:first-of-type
+{
+	margin-top: 5px;
+}
+
+
+/* Icon expand */
+.smk_accordion .accordion_in .acc_head .acc_icon_expand{
+	
+}
+.smk_accordion .accordion_in .acc_head .acc_icon_expand:after {
+    position: absolute;
+    content: "+";
+    width: 46px;
+    height: 46px;
+    top: 0;
+    right: 0;
+    z-index: 9;
+    font-size: 26px;
+    line-height: 26px;
+    font-family: 'Gotham-Book';
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    color: #fff;    
+	display: flex;
+	align-items: center;justify-content: center
+}
+.smk_accordion .accordion_in.acc_active .acc_head .acc_icon_expand:after {
+	content: "-";
+}
+
+/* JS requires */
+.smk_accordion .accordion_in.acc_active .acc_content{ 
+	display: block;
+}
+.smk_accordion .accordion_in.acc_active .acc_head{
+	background: transparent;
+}
+.smk_accordion.acc_with_icon .accordion_in .acc_head,
+.smk_accordion.acc_with_icon .accordion_in .acc_content{
+	padding: 5px 40px 5px 10px
+}
+
+@media screen and (max-width:768px){  
+	.smk_accordion .accordion_in .acc_head, .smk_accordion .accordion_in .acc_content .infolist li{font-size: 14px}
+}
+@media screen and (max-width:480px){  
+	.smk_accordion .accordion_in .acc_head{font-size: 13px}
+	.smk_accordion .accordion_in .acc_content .sectionlist{padding: 10px 10px 10px 20px}
+	.smk_accordion .accordion_in .acc_head .acc_icon_expand:after{height: 38px;font-size: 26px;line-height: 26px;top: 2px}
+	
+}
