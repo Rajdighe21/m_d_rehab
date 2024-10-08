@@ -1,0 +1,189 @@
+/*============================================================================================*/
+/* Your custom styles below */
+/*============================================================================================*/
+.margingb50 {
+	margin-bottom: 50px;
+}
+
+.txtaligncenter {
+	text-align: center;
+}
+
+.txtbold {
+	font-weight: bold
+}
+
+.skip {
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+.skip:focus {
+	position: static;
+	width: auto;
+	height: auto;
+}
+
+.bulleted-list {
+	list-style-type: disc;
+	margin: 1rem;
+}
+
+.skills h6 {
+	font-weight: 400;
+	letter-spacing: 1px;
+	margin-top: 40px;
+	margin-bottom: 5px;
+	font-size: 16px;
+}
+
+
+@media only screen and (max-width: 570px) {
+	.progress-bar {
+		width: 180px !important;
+	}
+}
+
+.progress-bar {
+	background: #959595;
+	width: 450px;
+	height: 10px;
+	border-radius: 5px;
+}
+
+.progress-bar div {
+	height: 10px;
+	border-radius: 5px;
+	width: 0%;
+}
+
+.progress-bar div span {
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	background: #000;
+	float: right;
+	margin-top: -15px;
+	margin-right: -20px;
+	color: #fff;
+	font-size: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.pateintMobility {
+	background: #28a745;
+	animation: pateintMobility 1s linear forwards;
+}
+
+.arealeg {
+	background: #01d332;
+	animation: arealeg 1s linear forwards;
+}
+
+
+.patientMotion {
+	background: #28a745;
+	animation: patientMotion 1s linear forwards;
+}
+
+.patientReduction {
+	background: #28a745;
+	animation: patientReduction 1s linear forwards;
+}
+
+.patientActivities {
+	background: #28a745;
+	animation: patientActivities 1s linear forwards;
+}
+
+.patientVitamin {
+	background: #28a745;
+	animation: patientVitamin 1s linear forwards;
+}
+
+.patientHealthStatus {
+	background: #FF0000;
+	animation: patientHealthStatus 1s linear forwards;
+}
+
+.pateintMobility span {
+	border: 1px solid #28a745;
+}
+
+.arealeg span {
+	border: 1px solid #28a745;
+}
+
+.patientMotion span {
+	border: 1px solid #28a745;
+}
+
+.patientReduction span {
+	border: 1px solid #28a745;
+}
+
+.patientActivities span {
+	border: 1px solid #28a745;
+}
+
+.patientVitamin span {
+	border: 1px solid #28a745;
+}
+
+.patientHealthStatus span {
+	border: 1px solid #FF0000;
+}
+
+
+.font-size-2 {
+	font-size: 1rem;
+}
+
+
+@keyframes pateintMobility {
+	100% {
+		width: 90%;
+	}
+}
+
+@keyframes arealeg {
+	100% {
+		width: 90%;
+	}
+}
+
+@keyframes patientMotion {
+	100% {
+		width: 90%;
+	}
+}
+
+@keyframes patientReduction {
+	100% {
+		width: 90%;
+	}
+}
+
+@keyframes patientActivities {
+	100% {
+		width: 90%;
+	}
+}
+
+@keyframes patientVitamin {
+	100% {
+		width: 60%;
+	}
+}
+
+@keyframes patientHealthStatus {
+	100% {
+		width: 30%;
+	}
+}

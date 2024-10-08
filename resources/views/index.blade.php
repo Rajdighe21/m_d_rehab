@@ -165,7 +165,7 @@
                     </div>
                 </div>
                 <div class="center-container">
-                    <a href="#" class="bookbtnResponsive">TAKE FREE ONLINE ASSESSMENT</a>
+                    <a href="{{route('mobilityTest')}}" class="bookbtnResponsive">TAKE FREE ONLINE ASSESSMENT</a>
                 </div>
             </header>
 
@@ -203,7 +203,7 @@
                                             AI based <br />
                                             <span>Advanced Robotic Physiotherapy Treatment</span>
                                         </div>
-                                        <a href="#" class="bookbtn">FREE ONLINE
+                                        <a href="{{route('mobilityTest')}}" class="bookbtn">FREE ONLINE
                                             ASSESSMENT</a>
                                     </div>
                                 </div>
@@ -221,7 +221,7 @@
                                         <div class="banner-para">5000+ happy patients, connect with us now to book your
                                             appointment. </div>
 
-                                        <a href="#" class="bookbtn">FREE ONLINE
+                                        <a href="{{route('mobilityTest')}}" class="bookbtn">FREE ONLINE
                                             ASSESSMENT</a>
                                     </div>
                                 </div>
@@ -239,7 +239,7 @@
                                         <div class="banner-para">Achieve 95% Recovery with Our Specialized
                                             Physiotherapy </div>
 
-                                        <a href="#" class="bookbtn">FREE ONLINE
+                                        <a href="{{route('mobilityTest')}}" class="bookbtn">FREE ONLINE
                                             ASSESSMENT</a>
                                     </div>
                                 </div>
